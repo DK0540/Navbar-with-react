@@ -25,13 +25,19 @@ li {
 /* navbar style start  */
 
 .main-nav {
+ padding-top: -15px;
   width: 100%;
-  height: 10rem;
+  height: 7rem;
   display: grid;
   grid-template-columns: 3rem 35rem 5fr 2fr 5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+   background-image: url("../Components/Pages/Assets/cool-background2.jpg.svg");
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 .logo {
   display: grid;
@@ -93,8 +99,9 @@ li {
 
 .menu-link ul li a {
   text-transform: capitalize;
-  color: rgba(0, 0, 3, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   transition: 0.5s;
+  font-size: 14px;
 }
 .menu-link ul li:hover > a {
   transform-origin: left;
@@ -112,7 +119,8 @@ li {
 }
 
 .facebook {
-  color: #3b5998;
+  color: #08090a;
+  font-size: 50px;
 }
 
 .instagram {
@@ -120,7 +128,9 @@ li {
 }
 
 .youtube {
-  color: #ff0000;
+  color: #e8e8e8;
+  font-size: 20px;
+  
 }
 
 /* hero section   */

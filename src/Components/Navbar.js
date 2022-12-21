@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsYoutube, BsInstagram } from "react-icons/bs";
+import { BiHelpCircle, BsInstagram } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosContact } from "react-icons/io";
 import "./navbar.css";
@@ -49,7 +49,7 @@ const Navbar = () => {
                 href="https://www.youtube.com/watch?v=eBKcGAhkZUI&t=8s"
                 target="_thapa"
               >
-                <BsYoutube className="youtube" />
+                <BiHelpCircle className="youtube" />
               </a>
             </li>
           </ul>
