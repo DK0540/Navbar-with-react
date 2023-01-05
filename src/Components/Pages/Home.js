@@ -2,19 +2,21 @@ import React from "react";
 import Card from "./Card";
 import Card1 from "./Card1";
 import Card2 from "./Card2";
-import "./home.css";
+import Hcss from "./home.module.css";
+import Footer from "./Footer";
+
 const Home = () => {
   return (
     <>
-      <section className="main-container">
+      <section className={Hcss.maincontainer}>
         <div>
-          <h1 className="title">RIGHT STAGE TO CUSTOMIZATION</h1>
-          <p className="ptitle">TO SUPPLY CHAIN MANAGE</p>
+          <h1 className={Hcss.title}>RIGHT STAGE TO CUSTOMIZATION</h1>
+          <p className={Hcss.ptitle}>TO SUPPLY CHAIN MANAGE</p>
         </div>
-        <div className="allcards">
-          <div className="ptext">
-            <h1 className="planetitle">PLANE YOUR IDIAS</h1>
-            <p className="detailp">
+        <div className={Hcss.allcards}>
+          <div className={Hcss.ptext}>
+            <h1 className={Hcss.planetitle}>PLANE YOUR IDIAS</h1>
+            <p className={Hcss.detailp}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               iusto non nobis dicta reprehenderit iure debitis, deleniti
               voluptates, aliquam ratione maiores inventore excepturi.
@@ -26,6 +28,7 @@ const Home = () => {
           <Card2 />
         </div>
       </section>
+      <Footer />
     </>
   );
 };

@@ -1,49 +1,84 @@
 import React from "react";
-import "./card.css";
+import Card2css from "./card.module.css";
 import { BsArrowRightCircleFill } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 const Card2 = () => {
   return (
     <div>
-      <div className="icon1">
+      <div className={Card2css.icon1}>
         <img
           className="img22"
           src="https://thumbs.dreamstime.com/b/group-people-planning-concept-business-plan-office-56275448.jpg"
           alt=""
         />
       </div>
-      <div className="card">
-        <div className="icard">
-          <div className="card-content">
-            <p>
-              <span className="iconarrow">
-                <BsArrowRightCircleFill />
-              </span>
-              link1
-            </p>
-            <p>
-              <span className="iconarrow">
-                <BsArrowRightCircleFill />
-              </span>
-              link1
-            </p>
+      <div className={Card2css.card}>
+        <div className={Card2css.icard}>
+          <div className={Card2css.cardcontent}>
+            <div className={Card2css.lists}>
+              <NavLink to={"/link1"}>
+                <p>
+                  <span className={Card2css.iconarrow}>
+                    <BsArrowRightCircleFill />
+                  </span>
+                  <h6>link1</h6>
+                </p>
+              </NavLink>
+              <NavLink to={"/link1"}>
+                <p>
+                  <span className={Card2css.iconarrow}>
+                    <BsArrowRightCircleFill />
+                  </span>
+                  <h6>link1</h6>
+                </p>
+              </NavLink>
 
-            <p>
-              <span className="iconarrow">
-                <BsArrowRightCircleFill />
-              </span>
-              link1
-            </p>
+              <NavLink to={"/link1"}>
+                <p>
+                  <span className={Card2css.iconarrow}>
+                    <BsArrowRightCircleFill />
+                  </span>
+                  <h6>link1</h6>
+                </p>
+              </NavLink>
 
-            <p>
-              <span className="iconarrow">
-                <BsArrowRightCircleFill />
-              </span>
-              link1
-            </p>
-            <div className="card-image-div">
+              <NavLink to={"/link1"}>
+                <p>
+                  <span className={Card2css.iconarrow}>
+                    <BsArrowRightCircleFill />
+                  </span>
+                  <h6>link1</h6>
+                </p>
+              </NavLink>
+              <NavLink to={"/link1"}>
+                <p>
+                  <span className={Card2css.iconarrow}>
+                    <BsArrowRightCircleFill />
+                  </span>
+                  <h6>link1</h6>
+                </p>
+              </NavLink>
+              <NavLink to={"/link1"}>
+                <p>
+                  <span className={Card2css.iconarrow}>
+                    <BsArrowRightCircleFill />
+                  </span>
+                  <h6>link1</h6>
+                </p>
+              </NavLink>
+              <NavLink to={"/link1"}>
+                <p>
+                  <span className={Card2css.iconarrow}>
+                    <BsArrowRightCircleFill />
+                  </span>
+                  <h6>link1</h6>
+                </p>
+              </NavLink>
+            </div>
+            <div className={Card2css.cardimagediv}>
               <img
-                className="card-image"
+                className={Card2css.cardimage}
                 src="https://digitaltrix.com.br/wp-content/uploads/2018/05/marketing-digital-1000x600.jpg"
                 alt=""
               />

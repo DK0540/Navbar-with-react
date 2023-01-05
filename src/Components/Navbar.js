@@ -3,6 +3,7 @@ import { BiHelpCircle, BsInstagram } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosContact } from "react-icons/io";
 import "./navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [showMediaIcon, setShowMediaIcon] = useState(false);
@@ -10,11 +11,13 @@ const Navbar = () => {
     <>
       <nav className="main-nav">
         <div className="logo">
-          <h2>
-            <span>R</span>ight
-            <span>S</span>tage
-            <span>C</span>ostumization
-          </h2>
+          <NavLink to={"/logo"}>
+            <h2>
+              <span>S</span>upply
+              <span>C</span>hain
+              <span>M</span>anagement
+            </h2>
+          </NavLink>
         </div>
         <div
           className={showMediaIcon ? "menu-link mobile-menu-link" : "menu-link"}
@@ -26,9 +29,11 @@ const Navbar = () => {
             <li>
               <a href="#">Varification</a>
             </li>
-            <li>
-              <a href="#">RSC WorkFlowIndex</a>
-            </li>
+            <NavLink to={"/rsc"}>
+              <li>
+                <a href="#">RSC WorkFlowIndex</a>
+              </li>
+            </NavLink>
             <li>
               <a href="#">SetLocation</a>
             </li>
